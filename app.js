@@ -71,7 +71,8 @@ let getweathertodom = (data) => {
     getfirstphoto.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     getcity.textContent = `${data.name} - ${data.sys.country}`;
     getdayname.textContent = dayofweek();
-    gettempdata.textContent = data.main.temp > 0 ? `${data.main.temp}` : `-${data.main.temp}`;
+    // gettempdata.textContent = data.main.temp > 0 ? `${data.main.temp}` : `-${data.main.temp}`;
+    gettempdata.textContent = data.main.temp;
     gethumidity.textContent = `${data.main.humidity}`;
     getpredata.textContent = `${data.main.pressure}`;
     getwinddata.textContent = `${data.wind.speed}`;
