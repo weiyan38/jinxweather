@@ -117,9 +117,11 @@ let getforecasttodom = (forecasts) => {
         let getday = new Date(forecast.dt_txt).getDay();     
 
         let html = `
-            <div class="w-1/5 p-1 text-center border border-dotted">
+            <div class="w-full sm:w-1/2 lg:w-1/5 p-1 text-center border border-dotted">
                 <p class="text-xs otherday">${daynames[getday]}</p>
-                <img  src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="">
+                <div class="flex justify-center items-center">
+                    <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="">
+                </div>
                 <p class="text-xs"><span class="othertempdata">${temperature}</span> <span class="">&deg;C</span></p>
             </div>
         `;
