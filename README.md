@@ -1,7 +1,7 @@
 # WeatherForecast-by-Json
-Meowiee's Weather Forecast
+Jinx Weather Forecast
 
-# Jinx Weather Forecast Project
+# Weather Forecast Project
 
 This is a simple weather forecast project that uses the OpenWeatherMap API to display current weather data and a 5-day forecast for a given city. It is a responsive web app built using HTML, CSS, and JavaScript (with Axios and jQuery for API calls).
 
